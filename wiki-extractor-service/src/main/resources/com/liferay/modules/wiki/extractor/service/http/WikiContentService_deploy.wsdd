@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+	<service name="Plugin_WikiExtractor_WikiContentService" provider="java:RPC" style="rpc" use="encoded">
+		<operation xmlns:operNS="urn:http.service.extractor.wiki.modules.liferay.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="getRenderedWikiPage" qname="operNS:getRenderedWikiPage" returnQName="getRenderedWikiPageReturn" returnType="rtns:string" soapAction="">
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="siteUrl" type="tns:string"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="plid" type="tns:long"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="groupId" type="tns:long"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="nodeId" type="tns:long"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="name" type="tns:string"></parameter>
+		</operation>
+		<parameter name="allowedMethods" value="getRenderedWikiPage" />
+		<parameter name="className" value="com.liferay.modules.wiki.extractor.service.http.WikiContentServiceSoap" />
+		<parameter name="typeMappingVersion" value="1.2" />
+		<parameter name="wsdlPortType" value="WikiContentServiceSoap" />
+		<parameter name="wsdlServiceElement" value="WikiContentServiceSoapService" />
+		<parameter name="wsdlServicePort" value="Plugin_WikiExtractor_WikiContentService" />
+		<parameter name="wsdlTargetNamespace" value="urn:http.service.extractor.wiki.modules.liferay.com" />
+	</service>
+</deployment>

@@ -1,0 +1,7 @@
+Bundle-SymbolicName: wiki.extractor-service
+Bundle-Version: 1.0.1
+Liferay-Require-SchemaVersion: 1.0.0
+Liferay-Service: true
+Bundle-Name: Wiki Content Extractor Service
+-sources: true
+-dsannotations: *

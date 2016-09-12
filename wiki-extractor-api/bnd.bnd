@@ -1,0 +1,11 @@
+Bundle-SymbolicName: wiki.extractor-api
+Bundle-Version: 1.0.1
+Export-Package: \
+	com.liferay.modules.wiki.extractor.exception,\
+	com.liferay.modules.wiki.extractor.model,\
+	com.liferay.modules.wiki.extractor.service,\
+	com.liferay.modules.wiki.extractor.service.persistence
+Bundle-Name: Wiki Content Extractor API
+-includeresource: META-INF/service.xml=../wiki-extractor-service/service.xml
+-sources: true
+-dsannotations: *
